@@ -1,6 +1,6 @@
 const CACHE_NAME = 'gbt-kp-cache-v1';
 const urlsToCache = [
-  './GBTKP.html',
+  './JBPAS.html',
   './style.css',
   './script.js',
   './logo.png'
