@@ -1,4 +1,4 @@
-# GBT Kristus Penolong-Pasuruan - Church Member Web App
+# JEMAAT BERSATU-Pasuruan - Church Member Web App
 
 Welcome to the Church Member Application documentation. This application is designed to be an interactive, modern, and aesthetic solution for managing the church congregation for GBT Kristus Penolong-Pasuruan.
 
