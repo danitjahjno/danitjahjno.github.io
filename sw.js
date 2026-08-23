@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gbt-kp-cache-v1';
+const CACHE_NAME = 'jb-pas-cache-v1';
 const urlsToCache = [
   './JBPAS.html',
   './style.css',
