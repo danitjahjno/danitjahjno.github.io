@@ -82,7 +82,7 @@ function setupLogin() {
             // Memeriksa password sesuai role
             let isValid = false;
             if (role === 'Admin') {
-                if (pass === 'adminGBT') isValid = true;
+                if (pass === 'JBPAS2026') isValid = true;
             } else {
                 if (pass.toLowerCase() === role.toLowerCase() || pass === role + "123") isValid = true;
             }
@@ -340,7 +340,7 @@ function editMember(id) {
     document.getElementById("totalKeluarga").value = member.totalKeluarga;
     document.getElementById("alamat").value = member.alamat;
     document.getElementById("noHp").value = member.noHp;
-    document.getElementById("peranGbt").value = member.peranGbt;
+    document.getElementById("peranJB").value = member.peranGbt;
     
     const komisiSelect = document.getElementById("komisi");
     Array.from(komisiSelect.options).forEach(opt => opt.selected = false);
@@ -384,7 +384,7 @@ function viewMember(id) {
                     <p><strong>Usia:</strong> ${age} Tahun</p>
                     <p><strong>J.Kelamin:</strong> ${member.jenisKelamin}</p>
                     <p><strong>No HP:</strong> ${member.noHp}</p>
-                    <p><strong>Posisi:</strong> ${member.peranGbt}</p>
+                    <p><strong>Posisi:</strong> ${member.peranJB}</p>
                     <p><strong>Komisi:</strong> ${member.komisi}</p>
                     <p><strong>Status:</strong> ${member.status}</p>
                 </div>
@@ -435,13 +435,13 @@ function populateCardSelect() {
             document.getElementById("cardKomisi").textContent = member.komisi;
 
             const cardObj = document.getElementById("idCardElement");
-            if (member.peranGbt === "Jemaat" || member.peranGbt === "Jemaat Umum") {
+            if (member.peranJB === "Jemaat" || member.peranGbt === "Jemaat Umum") {
                 cardObj.style.backgroundColor = "lightgreen";
-            } else if (member.peranGbt === "Pengurus") {
+            } else if (member.peranJB === "Pengurus") {
                 cardObj.style.backgroundColor = "yellow";
-            } else if (member.peranGbt === "Majelis") {
+            } else if (member.peranJB === "Majelis") {
                 cardObj.style.backgroundColor = "silver";
-            } else if (member.peranGbt === "Pendeta" || member.peranGbt === "Hamba Tuhan") {
+            } else if (member.peranJB === "Pendeta" || member.peranGbt === "Hamba Tuhan") {
                 cardObj.style.backgroundColor = "gold";
             } else {
                 cardObj.style.backgroundColor = "white";
@@ -473,7 +473,7 @@ function printCard() {
     printWindow.document.write(`
         <html>
         <head>
-            <title>Cetak Kartu - GBT Kristus Penolong-Pasuruan - ${document.getElementById('cardNama').textContent}</title>
+            <title>Cetak Kartu - JEMAAT BERSATU-Pasuruan - ${document.getElementById('cardNama').textContent}</title>
             <link rel="stylesheet" href="style.css">
             <style>
                 body { display: flex; justify-content: center; align-items: center; height: 100vh; background: white;}
